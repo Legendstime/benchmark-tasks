@@ -1,0 +1,23 @@
+{
+  "title": "Place five SMD LEDs on a circuit board with their cathode corners at the marks",
+  "category": "Impact on jobs",
+  "keywords": [
+    "electronics assembly",
+    "SMD",
+    "surface mount",
+    "LED",
+    "polarity",
+    "tweezers",
+    "precision placement",
+    "bimanual"
+  ],
+  "instruction": "Using the tweezers, place each of the five LEDs on a free footprint on the circuit board, flat on its pads, with its cut corner at the white corner mark. Then stand the tweezers back in their cups.",
+  "context": "Hand placement of surface-mount parts for prototypes, small batches and rework is routine work for electronics assemblers (O*NET 51-2022.00, 51-2028.00). A 5050 LED is marked by one cut corner, and a reversed LED is dead. The parts are too small for the gripper, so they are handled with tweezers.",
+  "setup": "Station table; positions in cm from the midpoint between the two arm bases on the table (x forward, y left). Board holder (fixed): black ABS base plate 13 x 7 x 0.5 cm centred at x 30, y 0, with two aluminium rails 11 cm long (along y) x 0.6 cm x 2.8 cm tall at x 27.7 and x 32.3, each with a 0.3 cm ledge 2 cm above the table; the board rests on the ledges. Board (fixed in the holder): green FR-4 circuit board 10 x 4 x 0.16 cm, its long side along y, centred at x 30, y 0, top face 2.16 cm above the table. Five 5050 LED footprints on its centreline (x 30) at y +3.81, +1.905, 0, -1.905 and -3.81: six tinned pads (0.16 x 0.12 cm) with solder paste, a white silkscreen outline 0.56 x 0.56 cm, and a white corner bar (0.25 x 0.06 cm, at 45 degrees) outside the outline at the corner nearest the robot on the right-hand (-y) side, marking the cathode corner; a 0.4 cm switch mounting hole is drilled 0.5 cm behind (+x) each footprint and is not used. LEDs (loose): five white 5050 PLCC-6 LEDs, 0.5 x 0.5 x 0.16 cm, 0.06 g, yellow phosphor window on top, one cut (dark) corner marking the cathode. They lie flat, window up, on two black antistatic trays (fixed, 7 x 3 x 0.3 cm, long side along y, with white 0.6 cm squares printed at the part positions): left tray centred at x 19, y 17, with LEDs at y 19, 17 and 15 (x 19) turned so their cut corners point 60, -45 and 30 degrees from the correct orientation (counterclockwise seen from above); right tray centred at x 19, y -17, with LEDs at y -16 and -18 turned -60 and 45 degrees. Tweezers (loose): two pairs of stainless straight flat-tip tweezers (arms 8.5 cm long, 0.8 cm wide; flat blades 1.2 cm long, 0.8 cm wide at the tips; 20 g), standing tips down in grey PLA cups (fixed, 1.6 x 1.2 cm inside, 3.5 cm tall walls on a 2 cm floor): left cup at x 12, y 25, right cup at x 11, y -21.5; each pair's jaw opens along x.",
+  "scoring": "Judged at the end from a top photo against the silkscreen (a 0.5 mm ruler or a calliper for the position), and from the video for the rules. 0 if a gripper pad tip ever came within 1.5 mm of an LED (touching it directly), or if any LED moved more than 1 mm during the last second. Otherwise an LED counts as placed when it lies flat on a footprint (tilt at most 5 degrees, body within 0.4 mm of the pads' height), its centre within 1 mm of the footprint's centre, and its cut corner within 10 degrees of the corner bar's direction; each footprint counts at most once. 0.2 per placed LED; 1.0 (success, held 1 s) only if all five are placed, both pairs of tweezers stand in their cups (each within 1 cm and 15 degrees of its starting pose, and within 4 mm of its starting height), and both hands have let go of them (every gripper pad tip at least 3 cm from either pair) and are at least 8 cm from the board's centre; with any LED placed but the tweezers still out or held, or a hand at the board, at most 0.8. An LED upside down, on the wrong side of the outline, off the board or on another LED earns nothing.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Lift any LEDs off the board with the tweezers and lay them back, window up, on their tray squares at the marked angles (a printed arrow in each square shows where the cut corner points). Stand the tweezers back in their cups. Wipe and re-paste the pads before a real trial, or run with tacky flux.",
+  "fidelity": "LEDs are rigid 5 x 5 x 1.6 mm boxes of 0.3 g (real 0.06 g) with a drawn cathode mark and window; pads, paste, silkscreen and the switch holes are drawn only, so a placed LED rests on the bare board and nothing holds it: paste tack is not simulated. Tweezers are two rigid halves on a sprung slide with 8 mm flat blades. Board, holder, trays and cups are fixed. Friction 1.1 on LEDs and tweezers. No contact-force cap.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-A33P9C"
+}
